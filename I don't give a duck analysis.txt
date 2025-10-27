@@ -1,0 +1,65 @@
+I don't give a duck analysis
+
+Key assessments and research points:
+
+1. Assess the effectiveness of click-based mechanics for player engagement
+2. Analyse the game's potential for scaling from 12 levels to 100+ levels
+3. Identify design strengths and limitations with supporting evidence
+4. Consider accessibility, player psychology, and technical constraints (mobile)
+
+Research Concepts to Guide Analysis:
+• Click-Based Mechanics: Immediate Gratification Theory, Cognitive Load Theory, Motor
+Accessibility, Input-Response Feedback Loops. Research industry examples: Candy Crush
+Saga (match-3 clicking), Fruit Ninja (swipe-based timing), Cookie Clicker (incremental
+clicking mechanics)
+• Scalability Challenges: Content Scalability, Player Motivation Decay, Difficulty Curve
+Mathematics, Player Fatigue. Compare approaches: Angry Birds (level-based
+progression), Temple Run (endless scaling), Plants vs Zombies (difficulty ramping)
+• Mechanical Depth: Interaction Design Constraints, Strategic Depth vs Accessibility, Skill
+Ceiling Concepts. Analyse examples: Tetris (simple inputs, complex strategy), Flappy Bird
+(minimal mechanics, high skill ceiling), Monument Valley (simple taps, spatial puzzles)
+• Design Strengths: Instant Gratification Design, Thematic Coherence, Mobile Gaming
+Context, Universal Design. Study successful examples: Pokémon GO (accessible AR
+interactions), Among Us (simple social mechanics), Clash Royale (streamlined strategy)
+
+Assessment Criteria:
+• Demonstrates understanding of click-based interaction design principles
+• Critically evaluates scalability challenges for 100+ level expansion
+• Identifies specific strengths and limitations with clear reasoning
+• Analyses mechanical depth constraints and opportunities
+• Recognises genuine design limitations while considering expansion potential
+• Uses appropriate game design terminology
+• Supports arguments with examples from the design documents 
+
+Instant gratification theory
+"Immediate gratification" describes the human desire for instant pleasure or reward, preferring a smaller, sooner benefit over a larger, delayed one. This tendency, rooted in evolutionary survival instincts and reinforced by modern technology, can lead to impulsive behaviours, procrastination, and short-term thinking, but it also has potential benefits for motivation when balanced with long-term goals.
+
+Ways to provide instant gratification 
+- Display the players points when they click a decoy duck, bad duck or a good duck.
+
+UI and interactive features
+- Trying to build tension - timer makes the player panic trying to convey a sense of urgency
+
+Cognitive load theory
+- Cognitive Load Theory, developed by John Sweller, posits that human working memory has a limited capacity, making it easily overloaded by excessive or irrelevant information, which hinders learning.
+- Minimal clt in the game
+
+Ways to improve the game and cognitive load
+- Make a negative or positive response more prominent for the user to guide them as a way to indicate progress - Particle effects, timer effects, sounds, shake effect, more sounds to form pattern recognition behaviours from the player
+- Add animations to make the different features and effects more enhanced
+- Introduce mechanics and make them more visible and make them more understandable 
+
+Accessibility restrictions
+- Make for a pc, think about users on tablets, phones
+- Making the game easier for players with physical hindrances and allow them to be able to enjoy the experience
+
+- Compare the game to other click based games and come up with other features, cookie clicker, fruit ninja, candy crush 
+
+What to add
+- Powerups to make the game more immersive
+- Repetitive gameplay is boring
+- Place checkpoints, leading to harder levels, saves progression
+- Extra lives instead of checkpoints...?
+- Possible changing of timer and scored based on how quickly the player completes the level
+-  
+

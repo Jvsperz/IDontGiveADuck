@@ -1,0 +1,7 @@
+Change background of the game for better thematic coherence between the game and the duck theme
+
+Add animations for waves or ripples before the ducks appear to allow them to be able to read the movements and anticipate where the ducks will spawn 
+
+Add flashing timer to allow better information clarity for the player
+
+Fix play area for the duck spawner and add audio cues when a duck spawns to make it more obvious to the player where they are about to appear so they can anticipate and react accordingly
