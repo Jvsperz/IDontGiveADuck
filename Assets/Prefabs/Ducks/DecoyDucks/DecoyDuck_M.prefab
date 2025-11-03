@@ -150,12 +150,11 @@ MonoBehaviour:
   pointValue: 0
   lifetime: 5
   moveSpeed: 0
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 7880989997502653140, guid: 19a2c5e9acf93514bad4f9cf5de28cca, type: 3}
   clickSound: {fileID: 0}
   penaltyParticles: {fileID: 0}
   penaltySound: {fileID: 0}
   timePenalty: 3
   penaltyTextPrefab: {fileID: 0}
   spriteRenderer: {fileID: 251516885786172104}
-  decoyColor: {r: 1, g: 0, b: 0, a: 1}
   subtleVisualDifference: 1

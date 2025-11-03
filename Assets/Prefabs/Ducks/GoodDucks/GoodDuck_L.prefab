@@ -150,10 +150,8 @@ MonoBehaviour:
   pointValue: 1
   lifetime: 5
   moveSpeed: 0
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 7880989997502653140, guid: 176be951b3b71ad40af9953cb09b0aa4, type: 3}
   clickSound: {fileID: 0}
   successParticles: {fileID: 0}
-  successSound: {fileID: 0}
   successTextPrefab: {fileID: 0}
   spriteRenderer: {fileID: 1339619373891858794}
-  lowLifetimeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

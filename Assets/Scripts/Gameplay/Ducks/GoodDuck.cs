@@ -82,9 +82,9 @@ public class GoodDuck : BaseDuck
     private void PlaySuccessEffects()
     {
         // Particle effect                                                                                 //Effect systemn for animation to be able to add water ripples 
-        if (successParticles != null)
+        if (destroyEffect != null)
         {
-            ParticleSystem effect = Instantiate(successParticles, transform.position, transform.rotation);
+            ParticleSystem effect = Instantiate(destroyEffect, transform.position, transform.rotation);
             effect.Play();
             Destroy(effect.gameObject, effect.main.duration);
         }
