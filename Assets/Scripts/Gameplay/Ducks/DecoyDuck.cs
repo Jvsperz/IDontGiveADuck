@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 /// <summary>
 /// Decoy duck that penalises players when clicked
@@ -14,12 +15,22 @@ public class DecoyDuck : BaseDuck
     [Header("Visual Distinction")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private bool subtleVisualDifference = true; // Make it harder to distinguish
-    
+
     #region Initialization Override
-    
+
     /// <summary>
     /// Initialise decoy duck with custom properties
     /// </summary>
+    /// 
+
+    private CinemachineImpulseSource ImpulseSource;
+
+    protected override void Start()
+    {
+        ImpulseSource = GetComponent<CinemachineImpulseSource>();
+    }
+    
+
     public override void Initialize(float customLifetime = -1, int customPointValue = -1)
     {
         base.Initialize(customLifetime, customPointValue);
@@ -41,7 +52,7 @@ public class DecoyDuck : BaseDuck
         
         // Play penalty feedback
         PlayPenaltyEffects();
-        
+        CameraShake.instance.Camerashake(ImpulseSource);
         // Destroy duck
         DestroyDuck();
     }

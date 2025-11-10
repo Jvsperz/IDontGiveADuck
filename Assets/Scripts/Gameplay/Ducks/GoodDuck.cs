@@ -1,4 +1,6 @@
+using Unity.Cinemachine;
 using UnityEngine;
+
 
 /// <summary>
 /// Good duck that players should click for points
@@ -11,10 +13,11 @@ public class GoodDuck : BaseDuck
     
     [Header("Visual Feedback")]
     [SerializeField] private SpriteRenderer spriteRenderer;
-   
-    
+
+    private CinemachineImpulseSource ImpulseSource;
     protected override void Start()
     {
+        ImpulseSource = GetComponent<CinemachineImpulseSource>();
         base.Start();
         
     }
@@ -23,6 +26,7 @@ public class GoodDuck : BaseDuck
     
     protected override void OnClicked()
     {
+        
         Debug.Log($"Good duck clicked! Awarded {pointValue} points");
         
         // Notify game manager
@@ -30,10 +34,13 @@ public class GoodDuck : BaseDuck
         {
             GameManager.Instance.OnGoodDuckClicked(this);
         }
+
         
         // Play success feedback
         PlaySuccessEffects();
-        
+
+        CameraShake.instance.Camerashake(ImpulseSource);
+
         // Destroy duck
         DestroyDuck();
     }
