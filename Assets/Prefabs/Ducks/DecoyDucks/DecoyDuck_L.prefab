@@ -152,7 +152,7 @@ MonoBehaviour:
   lifetime: 5
   moveSpeed: 0
   destroyEffect: {fileID: 7880989997502653140, guid: 19a2c5e9acf93514bad4f9cf5de28cca, type: 3}
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 860169281b1ecfd4f90f4f9c7b81102c, type: 3}
   penaltyParticles: {fileID: 0}
   penaltySound: {fileID: 0}
   timePenalty: 2
@@ -211,4 +211,4 @@ MonoBehaviour:
     DissipationMode: 2
     DissipationDistance: 100
     PropagationSpeed: 343
-  DefaultVelocity: {x: 0.5, y: -0.5, z: 0}
+  DefaultVelocity: {x: 0.7, y: -0.7, z: 0}

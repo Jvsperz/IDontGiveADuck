@@ -152,7 +152,7 @@ MonoBehaviour:
   lifetime: 5
   moveSpeed: 0
   destroyEffect: {fileID: 7880989997502653140, guid: 176be951b3b71ad40af9953cb09b0aa4, type: 3}
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: b279a8775ece7f24b8696658812cb27b, type: 3}
   successParticles: {fileID: 0}
   successTextPrefab: {fileID: 0}
   spriteRenderer: {fileID: 1339619373891858794}
@@ -208,4 +208,4 @@ MonoBehaviour:
     DissipationMode: 2
     DissipationDistance: 100
     PropagationSpeed: 343
-  DefaultVelocity: {x: 0, y: 0, z: 0}
+  DefaultVelocity: {x: 0.2, y: 0.2, z: 0}

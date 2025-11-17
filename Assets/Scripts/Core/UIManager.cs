@@ -1,7 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
 using TMPro;
+using Unity.Cinemachine;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 /// <summary>
 /// UIManager - Centralised UI system for the game
@@ -55,7 +56,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private bool showDebugInfo = true;      // Toggle to show debug information on screen
     [SerializeField] private Color timerWarningColor = Color.red;  // Colour when time is running low
     [SerializeField] private float timerWarningThreshold = 10f;    // Time remaining when warning starts
-    
+
     // ===== PRIVATE VARIABLES =====
     private Color originalTimerColor;  // Stores the original timer colour to restore it later
     
@@ -82,6 +83,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
     void Start()
     {
+       
         // Subscribe to GameManager events so UI updates automatically
         // This is an example of the Observer pattern - UI "listens" for game changes
         if (GameManager.Instance != null)
@@ -157,7 +159,8 @@ public class UIManager : MonoBehaviour
         if (scoreText != null)
             scoreText.text = $"Score: {score:N0}";
     }
-    
+   
+
     /// <summary>
     /// Updates the timer display and changes colour when time is running low
     /// Converts seconds to minutes:seconds format and shows warning colour
@@ -170,13 +173,23 @@ public class UIManager : MonoBehaviour
             int minutes = Mathf.FloorToInt(timeLeft / 60);  // FloorToInt rounds down to nearest integer
             int seconds = Mathf.FloorToInt(timeLeft % 60);  // % is modulo operator (remainder after division)
             timerText.text = $"Time: {minutes:00}:{seconds:00}";  // :00 format ensures 2 digits
-            
+
             // Change colour to red when time is running low
             if (timeLeft <= timerWarningThreshold)
+            {
                 // Lerp smoothly transitions between colours based on remaining time
                 timerText.color = Color.Lerp(timerWarningColor, originalTimerColor, timeLeft / timerWarningThreshold);
+                timerText.fontSize = 80;
+            }
+               
+                
             else
+            {
                 timerText.color = originalTimerColor;
+                timerText.fontSize = 60;
+            }
+                
+
         }
     }
     
